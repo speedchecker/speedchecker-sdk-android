@@ -14,7 +14,7 @@ Speedchecker SDK for Android allows developers to integrate speed test feature i
  - minSdkVersion 16
 
 ## Installation
-###### 1. Update the "project level" gradle file.
+**1. Update the "project level" gradle file.**
 ```
 allprojects {
    repositories {
@@ -28,23 +28,22 @@ allprojects {
    }
 }
 ```
-###### 2. Update the "app level" gradle file
+**2. Update the "app level" gradle file.**
 ```
 implementation 'com.speedchecker:android-sdk:4.2.105-2-demo'
 ```
-###### 3. Initialize SpeedcheckerSDK inside a main activity.
+**3. Initialize SpeedcheckerSDK inside a main activity.**
 ```
-@Override
 public void onCreate() {
   super.onCreate();
   SpeedcheckerSDK.init(this);
 }
 ```
-###### 4. Ask Location permissions.
+**4. Ask Location permissions.**
 ```
 SpeedcheckerSDK.askPermissions(this);
 ```
-###### 5. Implement the "SpeedTestListener" interface and override methods (an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else).
+**5. Implement the "SpeedTestListener" interface and override methods (an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else).**
 ```
 import com.speedchecker.android.sdk.Public.SpeedTestListener;
 
@@ -60,18 +59,17 @@ public class SpeedTestCallbacks implements SpeedTestListener {
    //… other methods here
 }
 ```
-
-###### 6. Set implemented interface.
+**6. Set implemented interface.**
 ```
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
 OR 
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
 ```
-###### 7. Start Speed test.
+**7. Start Speed test.**
 ```
 SpeedcheckerSDK.SpeedTest.startTest(this);
 ```
-###### 8. That's it! To get more information you could take a look at our "Demo" app.
+**8. That's it! To get more information you can take a look at our "Demo" app.**
 
 ## Licence 
 SpeedChecker is offering different types of licences
