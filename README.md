@@ -15,7 +15,7 @@ Speedchecker SDK for Android allows developers to integrate speed test feature i
 
 ## Installation
 **1. Update the "project level" gradle file.**
-```
+<pre>
 allprojects {
    repositories {
        maven {
@@ -27,24 +27,24 @@ allprojects {
        }
    }
 }
-```
+</pre>
 **2. Update the "app level" gradle file.**
-```
+<pre>
 implementation 'com.speedchecker:android-sdk:4.2.105-2-demo'
-```
+</pre>
 **3. Initialize SpeedcheckerSDK inside a main activity.**
-```
+<pre>
 public void onCreate() {
   super.onCreate();
   SpeedcheckerSDK.init(this);
 }
-```
+</pre>
 **4. Ask Location permissions.**
-```
+<pre>
 SpeedcheckerSDK.askPermissions(this);
-```
+</pre>
 **5. Implement the "SpeedTestListener" interface and override methods (an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else).**
-```
+<pre>
 import com.speedchecker.android.sdk.Public.SpeedTestListener;
 
 public class SpeedTestCallbacks implements SpeedTestListener {
@@ -58,17 +58,17 @@ public class SpeedTestCallbacks implements SpeedTestListener {
    }
    //… other methods here
 }
-```
+</pre>
 **6. Set implemented interface.**
-```
+<pre>
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
 OR 
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
-```
+</pre>
 **7. Start Speed test.**
-```
+<pre>
 SpeedcheckerSDK.SpeedTest.startTest(this);
-```
+</pre>
 **8. That's it! To get more information you can take a look at our "Demo" app.**
 
 ## Licence 
