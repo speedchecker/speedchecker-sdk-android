@@ -100,7 +100,9 @@ Yes! Please take a look at this [repo](https://github.com/speedchecker/speedchec
 No, we provide support only on Basic and Advanced plans
 
 **What are all the metrics or KPIs that you can get using our SDKs?**
-Free version of the SDK allows to get basic metrics which are documented in this [API](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+
+Free version of the SDK allows to get basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+
 [Full list of our KPIs of Basic and Advanced versions](https://www.speedchecker.com/broadband-data/kpis.html)
 
 
