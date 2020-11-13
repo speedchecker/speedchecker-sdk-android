@@ -100,8 +100,9 @@ Yes! Please take a look at this [repo](https://github.com/speedchecker/speedchec
 No, we provide support only on Basic and Advanced plans
 
 **What are all the metrics or KPIs that you can get using our SDKs?**
+Free version of the SDK allows to get basic metrics which are documented in this [API](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+[Full list of our KPIs of Basic and Advanced versions](https://www.speedchecker.com/broadband-data/kpis.html)
 
-[Full list of our KPIs](https://www.speedchecker.com/broadband-data/kpis.html)
 
 **Do you host all infrastructure for the test?**
 
@@ -114,6 +115,7 @@ See our [measurement methodology](https://www.speedchecker.com/broadband-data/me
 ## What's next?
 Please contact us for more details and license requirements. Also you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
 - [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+- [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
 - [Buy licence](https://www.speedchecker.com/contact-us.html)
 - [Contact us](https://www.speedchecker.com/contact-us.html)
 - [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
