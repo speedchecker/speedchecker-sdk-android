@@ -42,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements SpeedTestListener
 
         //TODO: 4. Ask Location permissions.
         SpeedcheckerSDK.askPermissions(this);
+        //OR request location permissions manually. We need:
+        //ACCESS_COARSE_LOCATION
+        //ACCESS_FINE_LOCATION
+        //ACCESS_BACKGROUND_LOCATION
 
         //TODO: 6. Set implemented interface.
         SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
