@@ -58,10 +58,6 @@ public class MainActivity extends AppCompatActivity implements SpeedTestListener
             }
         });
 
-        //CAUTION! Bounce FCM messages.
-        //  If your app doesn't use FCM, please, skip this step.
-        //  Otherwise go to -> ExampleFCMService.class
-
         //===========================
         //=== Additional features ===
         //===========================
@@ -124,10 +120,10 @@ public class MainActivity extends AppCompatActivity implements SpeedTestListener
     }
 
     @Override
-    public void onPingFinished(int i) {
+    public void onPingFinished(int ping, int jitter) {
         mTextViewStage.setText("Ping Finished");
-        mTextViewResult.setText(i + " ms");
-        log("Ping Finished: " + i + " ms");
+        mTextViewResult.setText(ping + " ms | jitter: " + jitter);
+        log("Ping Finished: " + ping + " ms| jitter: " + jitter);
     }
 
     @Override
