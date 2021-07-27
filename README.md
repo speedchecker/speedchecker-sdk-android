@@ -85,7 +85,7 @@ Please contact us for more details and license requirements. Also you can downlo
 
 * [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 * [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
-* [Buy licence](https://www.speedchecker.com/contact-us.html)
+* [Buy license](https://www.speedchecker.com/contact-us.html)
 * [Contact us](https://www.speedchecker.com/contact-us.html)
 * [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
 
