@@ -1,85 +1,50 @@
 # Speedchecker SDK for Android - Free speed test for your own app.
 
-Speedchecker SDK for Android allows developers to integrate speed test feature into their own apps. You can also try our app on  [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+Speedchecker SDK for Android allows developers to integrate speed test feature into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 
 ## Features
-- latency, download and upload speed of the user connection
-- robust measuring of cellular, wireless, even local network
-- testing details like the current speed and progress
-- additional information like network type and location (see KPI list below in FAQ)
-- included high-capacity servers provided and maintained by [Speedchecker](https://www.speedchecker.com) or custom servers
-- detailed statistics and reports by Speedchecker
+
+* latency, download and upload speed of the user connection
+* robust measuring of cellular, wireless, even local network
+* testing details like the current speed and progress
+* additional information like network type and location \(see KPI list below in FAQ\)
+* included high-capacity servers provided and maintained by [Speedchecker](https://www.speedchecker.com) or custom servers
+* detailed statistics and reports by Speedchecker
 
 ## Requirements
- - minSdkVersion 16
- - compileSdkVersion 30
- - Location permissions
+
+* minSdkVersion 16
+* compileSdkVersion 30
+* Location permissions
 
 ## Installation
+
 **1. Update the "project level" gradle file.**
-<pre>
-allprojects {
-   repositories {
-       maven {
-            url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
-            credentials {
-                username = "demo"
-                password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
-            }
-       }
-   }
-}
-</pre>
-**2. Update the "app level" gradle file.**
-<pre>
-implementation 'com.speedchecker:android-sdk:4.2.118-demo-2'
-</pre>
-**3. Initialize SpeedcheckerSDK inside a main activity.**
-<pre>
-public void onCreate() {
-  super.onCreate();
-  SpeedcheckerSDK.init(this);
-}
-</pre>
-**4. Ask Location permissions.**
-<pre>
-SpeedcheckerSDK.askPermissions(this);
-</pre>
-**5. Implement the "SpeedTestListener" interface and override methods (an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else).**
-<pre>
-import com.speedchecker.android.sdk.Public.SpeedTestListener;
 
-public class SpeedTestCallbacks implements SpeedTestListener {
-   @Override
-   public void onTestStarted() {
-         //your code here
-   }
-   @Override
-   public void onFetchServerFailed() {
-         //your code here
-   }
-   //… other methods here
-}
-</pre>
-**6. Set implemented interface.**
-<pre>
-SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
-OR 
-SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
-</pre>
-**7. Start Speed test.**
-<pre>
-SpeedcheckerSDK.SpeedTest.startTest(this);
-</pre>
-**8. That's it! To get more information you can take a look at our ["Demo" app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master).**
+```
+ allprojects { repositories { maven { url 'https://maven.speedcheckerapi.com/artifactory/libs-demo' credentials { username = "demo" password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY" } } } } 
+ implementation 'com.speedchecker:android-sdk:4.2.118-demo-2' 
+ public void onCreate() { super.onCreate(); SpeedcheckerSDK.init(this); } 
+ SpeedcheckerSDK.askPermissions(this); 
+```
 
-## Licence 
+ import com.speedchecker.android.sdk.Public.SpeedTestListener;
+
+public class SpeedTestCallbacks implements SpeedTestListener { @Override public void onTestStarted\(\) { //your code here } @Override public void onFetchServerFailed\(\) { //your code here } //… other methods here } &lt;/pre&gt; **6. Set implemented interface.**
+
+## Licence
+
+```
+ SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks()); OR SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this); 
+ SpeedcheckerSDK.SpeedTest.startTest(this); 
+```
+
 SpeedChecker is offering different types of licences
 
-| Free  | Basic  | Advanced |
-| ------------- | ------------- | ------------- |
-| Download / Upload / Latency  | Download / Upload / Latency  | Download / Upload / Latency  |
-| Device / Network KPIs  | Device / Network KPIs  | Device / Network KPIs  |
+| Free | Basic | Advanced |
+| :--- | :--- | :--- |
+| Download / Upload / Latency | Download / Upload / Latency | Download / Upload / Latency |
+| Device / Network KPIs | Device / Network KPIs | Device / Network KPIs |
 | Required location permissions | - | - |
 | Required data sharing | - | - |
 | - | Custom measurement servers | Custom measurement servers |
@@ -106,7 +71,6 @@ Free version of the SDK allows to get basic metrics which are described in this 
 
 [Full list of our KPIs of Basic and Advanced versions](https://www.speedchecker.com/broadband-data/kpis.html)
 
-
 **Do you host all infrastructure for the test?**
 
 Yes, you do not need to run any servers. We provide and maintain network of high quality servers and CDNs to ensure the testing is accurate. If you wish to configure your own server, this is possible on Basic and Advanced plans.
@@ -116,9 +80,12 @@ Yes, you do not need to run any servers. We provide and maintain network of high
 See our [measurement methodology](https://www.speedchecker.com/broadband-data/measurement-method.html)
 
 ## What's next?
+
 Please contact us for more details and license requirements. Also you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
-- [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
-- [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
-- [Buy licence](https://www.speedchecker.com/contact-us.html)
-- [Contact us](https://www.speedchecker.com/contact-us.html)
-- [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
+
+* [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+* [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+* [Buy licence](https://www.speedchecker.com/contact-us.html)
+* [Contact us](https://www.speedchecker.com/contact-us.html)
+* [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
+
