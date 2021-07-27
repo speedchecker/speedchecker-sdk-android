@@ -1,6 +1,6 @@
 # Speedchecker SDK for Android - Free speed test for your own app.
 
-Speedchecker SDK for Android allows developers to integrate speed test feature into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+Speedchecker SDK for Android allows developers to integrate speed test features into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 
 ## Features
 
@@ -21,22 +21,22 @@ Speedchecker SDK for Android allows developers to integrate speed test feature i
 
 **1. Update the "project level" gradle file.**
 
-```
+```text
  allprojects { repositories { maven { url 'https://maven.speedcheckerapi.com/artifactory/libs-demo' credentials { username = "demo" password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY" } } } } 
  implementation 'com.speedchecker:android-sdk:4.2.118-demo-2' 
  public void onCreate() { super.onCreate(); SpeedcheckerSDK.init(this); } 
- SpeedcheckerSDK.askPermissions(this); 
+ SpeedcheckerSDK.askPermissions(this);
 ```
 
- import com.speedchecker.android.sdk.Public.SpeedTestListener;
+import com.speedchecker.android.sdk.Public.SpeedTestListener;
 
 public class SpeedTestCallbacks implements SpeedTestListener { @Override public void onTestStarted\(\) { //your code here } @Override public void onFetchServerFailed\(\) { //your code here } //… other methods here } &lt;/pre&gt; **6. Set implemented interface.**
 
 ## Licence
 
-```
+```text
  SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks()); OR SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this); 
- SpeedcheckerSDK.SpeedTest.startTest(this); 
+ SpeedcheckerSDK.SpeedTest.startTest(this);
 ```
 
 SpeedChecker is offering different types of licences
