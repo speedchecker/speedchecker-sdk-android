@@ -1,5 +1,5 @@
 # Speedchecker SDK - Demo app.
-<img src="https://github.com/speedchecker/speedchecker-sdk-android/blob/master/device-2020-11-10-183218.png" width="25%">
+<img src="https://github.com/speedchecker/speedchecker-sdk-android/blob/demo-app/device-2020-11-10-183218.png" width="25%">
 
 ## Installation
 **1. Update the "project level" gradle file.**
