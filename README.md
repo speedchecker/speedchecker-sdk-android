@@ -71,7 +71,7 @@ SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
 <pre>
 SpeedcheckerSDK.SpeedTest.startTest(this);
 </pre>
-**8. That's it! To get more information you can take a look at our ["Demo" app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master).**
+**8. That's it! To get more information you can take a look at our ["Demo" app](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app).**
 
 ## Licence
 SpeedChecker is offering different types of licences
@@ -121,4 +121,4 @@ Please contact us for more details and license requirements. Also you can downlo
 - [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
 - [Buy license](https://www.speedchecker.com/contact-us.html)
 - [Contact us](https://www.speedchecker.com/contact-us.html)
-- [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
+- [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
