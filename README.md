@@ -98,24 +98,19 @@ SpeedcheckerSDK.SpeedTest.startTest(this);
 
 #### 8. That's it! To get more information you can take a look at our [Demo App](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
 
-## Licence
+## License
 
-```
- SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks()); OR SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this); 
- SpeedcheckerSDK.SpeedTest.startTest(this); 
-```
+SpeedChecker is offering different types of licenses:
 
-SpeedChecker is offering different types of licences
-
-| Free | Basic | Advanced |
-| :--- | :--- | :--- |
-| Download / Upload / Latency | Download / Upload / Latency | Download / Upload / Latency |
-| Device / Network KPIs | Device / Network KPIs | Device / Network KPIs |
-| Required location permissions | - | - |
-| Required data sharing | - | - |
-| - | Custom measurement servers | Custom measurement servers |
-| - | - | Background data collection |
-| Cost: FREE | Cost: 1000 EUR per app per year | Cost: [Enquire](https://www.speedchecker.com/contact-us.html) |
+| Items | Free | Basic | Advanced |
+| :--- | :--- | :--- | :--- |
+| Speed Test Metrics | Download / Upload / Latency | Download / Upload / Latency | Download / Upload / Latency / Jitter |
+| Accompanying Metrics | Device / Network KPIs | Device / Network KPIs | Device / Network KPIs / Advanced Cellular KPIs |
+| Location Permission | Required location permissions | - | - |
+| Data Sharing Requirement | Required data sharing | - | - |
+| Measurement Servers | - | Custom measurement servers | Custom measurement servers |
+| Background and passive collection | - | - | Background and Passive data collection |
+| Cost | **FREE** | 1000 EUR per app per year | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html)\*\*\*\* |
 
 ## FAQ
 
