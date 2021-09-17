@@ -62,7 +62,9 @@ public void onCreate() {
 SpeedcheckerSDK.askPermissions(this);
 ```
 
-#### 5. Implement the "SpeedTestListener" interface and override methods \(an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else\).
+#### 5. Implement the "SpeedTestListener" interface and override methods 
+
+An example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else.
 
 ```java
 import com.speedchecker.android.sdk.Public.SpeedTestListener;
