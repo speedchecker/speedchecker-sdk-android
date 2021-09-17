@@ -140,7 +140,7 @@ Yes, you do not need to run any servers. We provide and maintain a network of hi
 
 See our [measurement methodology](https://www.speedchecker.com/broadband-data/measurement-method.html)
 
-## What's next?
+### What's next?
 
 Please contact us for more details and license requirements. Also, you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
 
