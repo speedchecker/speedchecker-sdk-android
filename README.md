@@ -33,6 +33,7 @@ import com.speedchecker.android.sdk.Public.SpeedTestListener;
 public class SpeedTestCallbacks implements SpeedTestListener { @Override public void onTestStarted\(\) { //your code here } @Override public void onFetchServerFailed\(\) { //your code here } //… other methods here } &lt;/pre&gt; 
 
 **6. Set implemented interface.**
+<<<<<<< HEAD
 
 ## License
 
@@ -47,6 +48,26 @@ SpeedChecker is offering different types of licenses
 | :--- | :--- | :--- |
 | Download / Upload / Latency | Download / Upload / Latency | Download / Upload / Latency |
 | Device / Network KPIs | Device / Network KPIs | Device / Network KPIs |
+=======
+<pre>
+SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
+OR
+SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
+</pre>
+**7. Start Speed test.**
+<pre>
+SpeedcheckerSDK.SpeedTest.startTest(this);
+</pre>
+**8. That's it! To get more information you can take a look at our ["Demo" app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master).**
+
+## Licence
+SpeedChecker is offering different types of licences
+
+| Free  | Basic  | Advanced |
+| ------------- | ------------- | ------------- |
+| Download / Upload / Latency  | Download / Upload / Latency  | Download / Upload / Latency  |
+| Device / Network KPIs  | Device / Network KPIs  | Device / Network KPIs  |
+>>>>>>> parent of 17ad7b5 (Updated README.md. Updated demo app link.)
 | Required location permissions | - | - |
 | Required data sharing | - | - |
 | - | Custom measurement servers | Custom measurement servers |
@@ -84,6 +105,7 @@ See our [measurement methodology](https://www.speedchecker.com/broadband-data/me
 ## What's next?
 
 Please contact us for more details and license requirements. Also you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
+<<<<<<< HEAD
 
 * [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 * [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
@@ -91,3 +113,10 @@ Please contact us for more details and license requirements. Also you can downlo
 * [Contact us](https://www.speedchecker.com/contact-us.html)
 * [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
 
+=======
+- [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+- [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+- [Buy license](https://www.speedchecker.com/contact-us.html)
+- [Contact us](https://www.speedchecker.com/contact-us.html)
+- [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
+>>>>>>> parent of 17ad7b5 (Updated README.md. Updated demo app link.)
