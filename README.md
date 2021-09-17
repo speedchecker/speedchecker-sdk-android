@@ -41,13 +41,13 @@ allprojects {
 }
 ```
 
-####  **2. Update the "app level" gradle file.**
+#### **2. Update the "app level" gradle file.**
 
 ```java
 implementation 'com.speedchecker:android-sdk:4.2.118-demo-2'
 ```
 
-####  **3.** Initialize SpeedcheckerSDK inside the main activity.
+#### **3.** Initialize SpeedcheckerSDK inside the main activity.
 
 ```java
 public void onCreate() {
@@ -56,13 +56,13 @@ public void onCreate() {
 }
 ```
 
-####  **4. Ask Location permissions.**
+#### **4. Ask Location permissions.**
 
 ```java
 SpeedcheckerSDK.askPermissions(this);
 ```
 
-#### 5. Implement the "SpeedTestListener" interface and override methods 
+#### 5. Implement the "SpeedTestListener" interface and override methods
 
 An example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else.
 
@@ -82,7 +82,7 @@ public class SpeedTestCallbacks implements SpeedTestListener {
 }
 ```
 
-####  **6. Set implemented interface.**
+#### **6. Set implemented interface.**
 
 ```java
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
@@ -90,7 +90,7 @@ OR
 SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
 ```
 
-####  **7. Start Speed test.**
+#### **7. Start Speed test.**
 
 ```java
 SpeedcheckerSDK.SpeedTest.startTest(this);
@@ -110,7 +110,7 @@ SpeedChecker is offering different types of licenses:
 | Data Sharing Requirement | Required data sharing | - | - |
 | Measurement Servers | - | Custom measurement servers | Custom measurement servers |
 | Background and passive collection | - | - | Background and Passive data collection |
-| Cost | **FREE** | 1000 EUR per app per year | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html)\*\*\*\* |
+| Cost | **FREE** | 1000 EUR per app per year | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
 
 ### FAQ
 
