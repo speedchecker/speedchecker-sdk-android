@@ -1,8 +1,14 @@
-# Speedchecker SDK for Android - Free speed test for your own app.
+---
+description: Developers guid
+---
 
-Speedchecker SDK for Android allows developers to integrate speed test features into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+# SpeedChecker SDK for Android
 
-## Features
+### Free speed test features for your own app
+
+SpeedChecker SDK for Android allows developers to integrate speed test features into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+
+### Features
 
 * latency, download and upload speed of the user connection
 * robust measuring of cellular, wireless, even local network
@@ -11,26 +17,84 @@ Speedchecker SDK for Android allows developers to integrate speed test features 
 * included high-capacity servers provided and maintained by [Speedchecker](https://www.speedchecker.com) or custom servers
 * detailed statistics and reports by Speedchecker
 
-## Requirements
+### Requirements
 
 * minSdkVersion 16
 * compileSdkVersion 30
 * Location permissions
 
-## Installation
+### Installation
 
-**1. Update the "project level" gradle file.**
+#### **1. Update the "project level" gradle file.**
 
+```java
+allprojects {
+   repositories {
+       maven {
+            url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
+            credentials {
+                username = "demo"
+                password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
+            }
+       }
+   }
+}
 ```
- allprojects { repositories { maven { url 'https://maven.speedcheckerapi.com/artifactory/libs-demo' credentials { username = "demo" password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY" } } } } 
- implementation 'com.speedchecker:android-sdk:4.2.118-demo-2' 
- public void onCreate() { super.onCreate(); SpeedcheckerSDK.init(this); } 
- SpeedcheckerSDK.askPermissions(this); 
+
+####  **2. Update the "app level" gradle file.**
+
+```java
+implementation 'com.speedchecker:android-sdk:4.2.118-demo-2'
 ```
 
- import com.speedchecker.android.sdk.Public.SpeedTestListener;
+####  **3.** Initialize SpeedcheckerSDK inside the main activity.
 
-public class SpeedTestCallbacks implements SpeedTestListener { @Override public void onTestStarted\(\) { //your code here } @Override public void onFetchServerFailed\(\) { //your code here } //… other methods here } &lt;/pre&gt; **6. Set implemented interface.**
+```java
+public void onCreate() {
+  super.onCreate();
+  SpeedcheckerSDK.init(this);
+}
+```
+
+####  **4. Ask Location permissions.**
+
+```java
+SpeedcheckerSDK.askPermissions(this);
+```
+
+#### 5. Implement the "SpeedTestListener" interface and override methods \(an example below shows a new class with overriding methods but you could implement the interface at "MainActivity" or somewhere else\).
+
+```java
+import com.speedchecker.android.sdk.Public.SpeedTestListener;
+
+public class SpeedTestCallbacks implements SpeedTestListener {
+   @Override
+   public void onTestStarted() {
+         //your code here
+   }
+   @Override
+   public void onFetchServerFailed() {
+         //your code here
+   }
+   //… other methods here
+}
+```
+
+####  **6. Set implemented interface.**
+
+```java
+SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks());
+OR
+SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
+```
+
+####  **7. Start Speed test.**
+
+```java
+SpeedcheckerSDK.SpeedTest.startTest(this);
+```
+
+#### 8. That's it! To get more information you can take a look at our [Demo App](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
 
 ## Licence
 
