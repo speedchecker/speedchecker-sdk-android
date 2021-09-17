@@ -1,5 +1,5 @@
 ---
-description: Developers guide.
+description: Developers guide
 ---
 
 # SpeedChecker SDK for Android
