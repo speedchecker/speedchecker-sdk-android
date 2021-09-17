@@ -38,10 +38,14 @@ public class SpeedTestCallbacks implements SpeedTestListener { @Override public 
 
 ## License
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
  SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks()); OR SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this); 
  SpeedcheckerSDK.SpeedTest.startTest(this); 
 ```
+{% endtab %}
+{% endtabs %}
 
 SpeedChecker is offering different types of licenses
 
