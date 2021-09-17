@@ -77,7 +77,7 @@ Free version of the SDK allows to get basic metrics which are described in this 
 
 **Do you host all infrastructure for the test?**
 
-Yes, you do not need to run any servers. We provide and maintain network of high quality servers and CDNs to ensure the testing is accurate. If you wish to configure your own server, this is possible on Basic and Advanced plans.
+Yes, you do not need to run any servers. We provide and maintain network of high-quality servers and CDNs to ensure the testing is accurate. If you wish to configure your own server, this is possible on Basic and Advanced plans.
 
 **How do you measure the speed?**
 
