@@ -98,7 +98,7 @@ SpeedcheckerSDK.SpeedTest.startTest(this);
 
 #### 8. That's it! To get more information you can take a look at our [Demo App](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
 
-## License
+### License
 
 SpeedChecker is offering different types of licenses:
 
@@ -112,37 +112,37 @@ SpeedChecker is offering different types of licenses:
 | Background and passive collection | - | - | Background and Passive data collection |
 | Cost | **FREE** | 1000 EUR per app per year | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html)\*\*\*\* |
 
-## FAQ
+### FAQ
 
-**Is the SDK free to use?**
+#### Is the SDK free to use?
 
 Yes! But the SDK collects data on network performance from your app and shares it with Speedchecker and our clients. Free SDK version requires enabled location. Those restrictions are not in Basic and Advanced versions
 
-**Do you have iOS SDK?**
+#### **Do you have iOS SDK?**
 
 Yes! Please take a look at this [repo](https://github.com/speedchecker/speedchecker-sdk-ios)
 
-**Do you provide free support?**
+#### **Do you provide free support?**
 
 No, we provide support only on Basic and Advanced plans
 
-**What are all the metrics or KPIs that you can get using our SDKs?**
+#### **What are all the metrics or KPIs that you can get using our SDKs?**
 
-Free version of the SDK allows to get basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+Free version of the SDK allows getting basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
 
 [Full list of our KPIs of Basic and Advanced versions](https://www.speedchecker.com/broadband-data/kpis.html)
 
-**Do you host all infrastructure for the test?**
+#### **Do you host all infrastructure for the test?**
 
-Yes, you do not need to run any servers. We provide and maintain network of high quality servers and CDNs to ensure the testing is accurate. If you wish to configure your own server, this is possible on Basic and Advanced plans.
+Yes, you do not need to run any servers. We provide and maintain a network of high-quality servers and CDNs to ensure the testing is accurate. If you wish to configure your own server, this is possible on Basic and Advanced plans.
 
-**How do you measure the speed?**
+#### **How do you measure the speed?**
 
 See our [measurement methodology](https://www.speedchecker.com/broadband-data/measurement-method.html)
 
 ## What's next?
 
-Please contact us for more details and license requirements. Also you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
+Please contact us for more details and license requirements. Also, you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
 
 * [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 * [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
