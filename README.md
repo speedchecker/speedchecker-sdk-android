@@ -38,7 +38,7 @@ public class SpeedTestCallbacks implements SpeedTestListener { @Override public 
 
 ## License
 
-```
+```java
  SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(new SpeedTestCallbacks()); OR SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this); 
  SpeedcheckerSDK.SpeedTest.startTest(this); 
 ```
