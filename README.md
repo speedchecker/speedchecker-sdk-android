@@ -43,7 +43,7 @@ public class SpeedTestCallbacks implements SpeedTestListener { @Override public 
  SpeedcheckerSDK.SpeedTest.startTest(this); 
 ```
 
-SpeedChecker is offering different types of licences
+SpeedChecker is offering different types of licenses
 
 | Free | Basic | Advanced |
 | :--- | :--- | :--- |
