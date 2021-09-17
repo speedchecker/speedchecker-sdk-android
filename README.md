@@ -119,4 +119,7 @@ Please contact us for more details and license requirements. Also you can downlo
 - [Buy license](https://www.speedchecker.com/contact-us.html)
 - [Contact us](https://www.speedchecker.com/contact-us.html)
 - [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/master)
+<<<<<<< HEAD
+>>>>>>> parent of 17ad7b5 (Updated README.md. Updated demo app link.)
+=======
 >>>>>>> parent of 17ad7b5 (Updated README.md. Updated demo app link.)
