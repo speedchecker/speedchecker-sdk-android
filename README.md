@@ -1,5 +1,4 @@
 ---
-Description: Developers guide
 description: Developers guide
 ---
 
