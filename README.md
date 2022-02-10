@@ -6,14 +6,14 @@ description: Developers guide
 
 ## Free speed test features for your own app
 
-SpeedChecker SDK for Android allows developers to integrate speed test features into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker&hl=en_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
+SpeedChecker SDK for Android allows developers to integrate speed test features into their own apps. You can also try our app on [Google Play](https://play.google.com/store/apps/details?id=uk.co.broadbandspeedchecker\&hl=en\_US), it's powered by the latest Speedchecker SDK version. More information about [SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 
 ## Features
 
 * latency, download and upload speed of the user connection
 * robust measuring of cellular, wireless, even local network
 * testing details like the current speed and progress
-* additional information like network type and location \(see KPI list below in FAQ\)
+* additional information like network type and location (see KPI list below in FAQ)
 * included high-capacity servers provided and maintained by [Speedchecker](https://www.speedchecker.com) or custom servers
 * detailed statistics and reports by Speedchecker
 
@@ -102,15 +102,15 @@ SpeedcheckerSDK.SpeedTest.startTest(this);
 
 SpeedChecker is offering different types of licenses:
 
-| Items | Free | Basic | Advanced |
-| :--- | :--- | :--- | :--- |
-| Speed Test Metrics | Download / Upload / Latency | Download / Upload / Latency | Download / Upload / Latency / Jitter |
-| Accompanying Metrics | Device / Network KPIs | Device / Network KPIs | Device / Network KPIs / Advanced Cellular KPIs |
-| Location Permission | Required location permissions | - | - |
-| Data Sharing Requirement | Required data sharing | - | - |
-| Measurement Servers | - | Custom measurement servers | Custom measurement servers |
-| Background and passive collection | - | - | Background and Passive data collection |
-| Cost | **FREE** | 1000 EUR per app per year | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
+| Items                             | Free                          | Basic                                | Advanced                                                          |
+| --------------------------------- | ----------------------------- | ------------------------------------ | ----------------------------------------------------------------- |
+| Speed Test Metrics                | Download / Upload / Latency   | Download / Upload / Latency / Jitter | Download / Upload / Latency / Jitter                              |
+| Accompanying Metrics              | Device / Network KPIs         | Device / Network KPIs                | Device / Network KPIs / Advanced Cellular KPIs                    |
+| Location Permission               | Required location permissions | -                                    | -                                                                 |
+| Data Sharing Requirement          | Required data sharing         | -                                    | -                                                                 |
+| Measurement Servers               | -                             | Custom measurement servers           | Custom measurement servers                                        |
+| Background and passive collection | -                             | -                                    | Background and Passive data collection                            |
+| Cost                              | **FREE**                      | 1000 EUR per app per year            | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
 
 ## FAQ
 
@@ -149,4 +149,3 @@ Please contact us for more details and license requirements. Also, you can downl
 * [Buy license](https://www.speedchecker.com/contact-us.html)
 * [Contact us](https://www.speedchecker.com/contact-us.html)
 * [Demo app](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
-
