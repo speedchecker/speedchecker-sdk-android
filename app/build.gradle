@@ -25,5 +25,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     //TODO: 2. Update the "app level" gradle file.
-    implementation 'com.speedchecker:android-sdk:4.2.142-demo'
+    implementation 'com.speedchecker:android-sdk:4.2.151-demo'
 }
