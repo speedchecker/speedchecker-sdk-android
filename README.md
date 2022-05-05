@@ -130,7 +130,7 @@ No, we provide support only on Basic and Advanced plans
 
 Free version of the SDK allows getting basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
 
-[Full list of our KPIs of Basic and Advanced versions](https://www.speedchecker.com/broadband-data/kpis.html)
+[Full list of our KPIs of Basic and Advanced versions](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/list-of-kpis)
 
 ### **Do you host all infrastructure for the test?**
 
@@ -138,7 +138,7 @@ Yes, you do not need to run any servers. We provide and maintain a network of hi
 
 ### **How do you measure the speed?**
 
-See our [measurement methodology](https://www.speedchecker.com/broadband-data/measurement-method.html)
+See our [measurement methodology](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/data-collection-methodologiesl)
 
 ## What's next?
 
