@@ -138,7 +138,7 @@ Yes, you do not need to run any servers. We provide and maintain a network of hi
 
 ### **How do you measure the speed?**
 
-See our [measurement methodology](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/data-collection-methodologiesl)
+See our [measurement methodology](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/data-collection-methodologies)
 
 ## What's next?
 
