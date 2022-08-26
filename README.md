@@ -11,7 +11,7 @@ SpeedChecker SDK for Android allows developers to integrate speed test features 
 ## Features
 
 * latency, download and upload speed of the user connection
-* robust measuring of cellular, wireless, even local network
+* robust measuring of cellular, wireless and even local network
 * testing details like the current speed and progress
 * additional information like network type and location (see KPI list below in FAQ)
 * included high-capacity servers provided and maintained by [Speedchecker](https://www.speedchecker.com) or custom servers
@@ -56,7 +56,7 @@ public void onCreate() {
 }
 ```
 
-### **4. Ask Location permissions.**
+### **4. Ask for Location permissions.**
 
 ```java
 SpeedcheckerSDK.askPermissions(this);
@@ -102,21 +102,22 @@ SpeedcheckerSDK.SpeedTest.startTest(this);
 
 SpeedChecker is offering different types of licenses:
 
-| Items                             | Free                          | Basic                                | Advanced                                                          |
-| --------------------------------- | ----------------------------- | ------------------------------------ | ----------------------------------------------------------------- |
-| Speed Test Metrics                | Download / Upload / Latency   | Download / Upload / Latency / Jitter | Download / Upload / Latency / Jitter                              |
-| Accompanying Metrics              | Device / Network KPIs         | Device / Network KPIs                | Device / Network KPIs / Advanced Cellular KPIs                    |
-| Location Permission               | Required location permissions | -                                    | -                                                                 |
-| Data Sharing Requirement          | Required data sharing         | -                                    | -                                                                 |
-| Measurement Servers               | -                             | Custom measurement servers           | Custom measurement servers                                        |
-| Background and passive collection | -                             | -                                    | Background and Passive data collection                            |
-| Cost                              | **FREE**                      | 1000 EUR per app per year            | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
+| Items                             | Free                          | Basic                                             | Advanced                                                          |
+| --------------------------------- | ----------------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
+| Speed Test Metrics                | Download / Upload / Latency   | Download / Upload / Latency / Jitter              | Download / Upload / Latency / Jitter                              |
+| Accompanying Metrics              | Device / Network KPIs         | Device / Network KPIs                             | Device / Network KPIs / Advanced Cellular KPIs                    |
+| Test Customization                | -                             | test duration, multi-threading, warm-up phase etc | test duration, multi-threading, warm-up phase etc                 |
+| Location Permission               | Required location permissions | -                                                 | -                                                                 |
+| Data Sharing Requirement          | Required data sharing         | -                                                 | -                                                                 |
+| Measurement Servers               | -                             | Custom measurement servers                        | Custom measurement servers                                        |
+| Background and passive collection | -                             | -                                                 | Background and Passive data collection                            |
+| Cost                              | **FREE**                      | 1,200 EUR per app per year                        | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
 
 ## FAQ
 
 ### Is the SDK free to use?
 
-Yes! But the SDK collects data on network performance from your app and shares it with Speedchecker and our clients. Free SDK version requires enabled location. Those restrictions are not in Basic and Advanced versions
+Yes! But the SDK collects data on network performance from your app and shares it with Speedchecker and our clients.The free SDK version requires and enabled location. Those restrictions are not in the Basic and Advanced versions
 
 ### **Do you have iOS SDK?**
 
@@ -128,9 +129,9 @@ No, we provide support only on Basic and Advanced plans
 
 ### **What are all the metrics or KPIs that you can get using our SDKs?**
 
-Free version of the SDK allows getting basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+The free version of the SDK allows getting basic metrics which are described in this [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
 
-[Full list of our KPIs of Basic and Advanced versions](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/list-of-kpis)
+[Full list of our KPIs for Basic and Advanced versions](https://docs.speedchecker.com/measurement-methodology-links/u21ongNGAYLb6eo7cqjY/kpis-and-measurements/list-of-kpis)
 
 ### **Do you host all infrastructure for the test?**
 
@@ -142,7 +143,7 @@ See our [measurement methodology](https://docs.speedchecker.com/measurement-meth
 
 ## What's next?
 
-Please contact us for more details and license requirements. Also, you can download the latest framework version, the sample app to see detailed implementation in Xcode project as well as our Internet Speed Test application on App Store.
+Please contact us for more details and license requirements. Also, you can download the latest framework version, the sample app to see detailed implementation in the Xcode project as well as our Internet Speed Test application on App Store.
 
 * [More information about SpeedChecker SDKs](https://www.speedchecker.com/speed-test-tools/mobile-apps-and-sdks.html)
 * [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
