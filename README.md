@@ -44,7 +44,7 @@ allprojects {
 ### **2. Update the "app level" gradle file.**
 
 ```java
-implementation 'com.speedchecker:android-sdk:4.2.151-demo'
+implementation 'com.speedchecker:android-sdk:4.2.160-demo'
 ```
 
 ### **3.** Initialize SpeedcheckerSDK inside the main activity.
@@ -97,6 +97,40 @@ SpeedcheckerSDK.SpeedTest.startTest(this);
 ```
 
 ### 8. That's it! To get more information you can take a look at our [Demo App](https://github.com/speedchecker/speedchecker-sdk-android/tree/demo-app)
+
+### 9. VoIP Test
+```java
+SpeedcheckerSDK.VoIPTest.startTest(
+                this,
+                callDuration,
+                callCount,
+                rtpTimeout,
+                payloadType,
+                callback
+               );
+               
+```
+
+### 10. VoIP Test interface
+```java
+IVoIPTestListener callback = new IVoIPTestListener() {
+            @Override
+            public void onResult(VoIPCallTaskResult result) {
+                //handle result
+            }
+
+            @Override
+            public void onProgress(int progress) {
+               //show progress
+            }
+
+            @Override
+            public void onFatalError(String message) {
+               //handle error
+            }
+        };
+```
+
 
 ## License
 
