@@ -19,8 +19,8 @@ SpeedChecker SDK for Android allows developers to integrate speed test features 
 
 ## Requirements
 
-* minSdkVersion 16
-* compileSdkVersion 30
+* minSdkVersion 19
+* compileSdkVersion 31
 * Location permissions
 
 ## Installation
@@ -44,7 +44,7 @@ allprojects {
 ### **2. Update the "app level" gradle file.**
 
 ```java
-implementation 'com.speedchecker:android-sdk:4.2.160-demo'
+implementation 'com.speedchecker:android-sdk:4.2.168-android-12-demo'
 ```
 
 ### **3.** Initialize SpeedcheckerSDK inside the main activity.
