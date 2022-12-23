@@ -123,6 +123,10 @@ Yes! But the SDK collects data on network performance from your app and shares i
 
 Yes! Please take a look at this [repo](https://github.com/speedchecker/speedchecker-sdk-ios)
 
+### **Does SDK support other types of tests?**
+
+Yes! YouTube video streaming, Voice over IP and other tests are there as well. Check out our [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
+
 ### **Do you provide free support?**
 
 No, we provide support only on Basic and Advanced plans
