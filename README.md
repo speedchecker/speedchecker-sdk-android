@@ -111,7 +111,7 @@ SpeedChecker is offering different types of licenses:
 | Data Sharing Requirement          | Required data sharing         | -                                                 | -                                                                 |
 | Measurement Servers               | -                             | Custom measurement servers                        | Custom measurement servers                                        |
 | Background and passive collection | -                             | -                                                 | Background and Passive data collection                            |
-| Cost                              | **FREE**                      | 1,200 EUR per app per year                        | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
+| Cost                              | **FREE**                      | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html)                        | Cost: [**Enquire**](https://www.speedchecker.com/contact-us.html) |
 
 ## FAQ
 
