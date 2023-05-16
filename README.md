@@ -123,6 +123,10 @@ Yes! But the SDK collects data on network performance from your app and shares i
 
 Yes! Please take a look at this [repo](https://github.com/speedchecker/speedchecker-sdk-ios)
 
+### **Do you support integration into apps developed using cross-platform frameworks?**
+
+Yes! We support [Flutter](https://github.com/speedchecker/flutter_plugin), [React Native](https://github.com/speedchecker/react_plugin) and [Cordova](https://github.com/speedchecker/cordova_plugin)
+
 ### **Does SDK support other types of tests?**
 
 Yes! YouTube video streaming, Voice over IP and other tests are there as well. Check out our [API documentation](https://github.com/speedchecker/speedchecker-sdk-android/wiki/API-documentation)
