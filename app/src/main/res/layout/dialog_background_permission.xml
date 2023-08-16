@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextTitle"
+        android:layout_marginTop="30dp"
+        android:text="@string/bg_location_title" />
+
+    <TextView
+        style="@style/TextMessage"
+        android:layout_marginTop="8dp"
+        android:text="@string/bg_location_message" />
+
+    <TextView
+        style="@style/TextMessage"
+        android:layout_marginTop="24dp"
+        android:text="@string/bg_location_message2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbAllowAll"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/permission_allow_all_time"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/colorRed" />
+
+        <include
+            layout="@layout/item_stub"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/item_stub"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/item_stub"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="true"
+        android:clickable="false"
+        android:text="@string/location_use_precise"
+        android:textColor="@color/colorRed"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:switchPadding="16dp"
+        android:theme="@style/SwitchStyle" />
+
+    <TextView
+        android:id="@+id/btnNext"
+        style="@style/MainButton"
+        android:layout_width="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/common_next" />
+
+</LinearLayout>
+
