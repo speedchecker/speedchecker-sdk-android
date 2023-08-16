@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorStatusBar"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_speedchecker_logo" />
+
+    <View style="@style/DividerSemi" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/containerStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextTitle"
+                        android:text="@string/welcome_title" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/welcome_description" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnStart"
+                style="@style/MainButton"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/common_start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerPhonePermission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_phone_permission" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_permission" />
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextTitle"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/permission_phone_title" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/permission_phone_message" />
+
+                    <TextView
+                        android:id="@+id/tvCalls"
+                        style="@style/TextMedium"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/permission_phone_message2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/bg_location_permission"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextTitle"
+                            android:padding="16dp"
+                            android:text="@string/permission_phone_allow"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorRed"
+                            android:textSize="15sp" />
+
+                        <View style="@style/DividerSemi" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_stub_row" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/btnFinish"
+                style="@style/MainButton"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/common_next" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

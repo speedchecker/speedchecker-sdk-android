@@ -1,88 +1,344 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView_stage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:inputType="textMultiLine|textNoSuggestions"
-        android:lineSpacingExtra="8sp"
-        android:padding="8dp"
-        android:text="-"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
-
-    <TextView
-        android:id="@+id/textView_result"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center_horizontal"
-        android:inputType="textMultiLine|textNoSuggestions"
-        android:scrollbars="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/textView_log"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_stage"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
-
-
-    <Button
-        android:id="@+id/button_speedTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:drawableStart="@drawable/ic_baseline_speed_24"
-        android:drawableLeft="@drawable/ic_baseline_speed_24"
-        android:drawablePadding="8dp"
-        android:text="Start speed test"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView_log"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/black"
-        android:padding="8dp"
-        android:scrollbars="vertical"
-        android:textColor="@android:color/white"
-        android:textIsSelectable="true"
-        app:layout_constraintBottom_toTopOf="@+id/button_speedTest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_result" />
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView_logo"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        android:background="@color/colorStatusBar"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_speedchecker_logo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View style="@style/DividerSemi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorStatusBar"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivTestStatusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            tools:src="@drawable/ic_download" />
+
+        <TextView
+            android:id="@+id/tvTestStatusText"
+            style="@style/TextMessage"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorRed"
+            tools:text="Test result" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/containerTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/testProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:indicatorColor="@color/colorRed"
+                app:trackColor="@color/colorRedDisabled" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                style="@style/TextMessage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorRed"
+                android:textSize="11sp"
+                tools:text="55%" />
+
+            <TextView
+                android:id="@+id/tvCurrentTestValue"
+                style="@style/TextMessage"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/textDarker"
+                tools:text="30MB" />
+
+            <TextView
+                android:id="@+id/tvTrafficTestValue"
+                style="@style/TextMessage"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textDarker"
+                tools:text="30MB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/containerResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_download" />
+
+                        <TextView
+                            style="@style/TextMessage"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/common_download"
+                            android:textColor="@color/colorRed" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTestResultDownload"
+                        style="@style/TextBold"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/textDark"
+                        android:textSize="24sp"
+                        tools:text="@string/common_download" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/common_unit"
+                        android:textColor="@color/textDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_upload" />
+
+                        <TextView
+                            style="@style/TextMessage"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="0dp"
+                            android:text="@string/common_upload"
+                            android:textColor="@color/colorRed" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTestResultUpload"
+                        style="@style/TextBold"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/textDark"
+                        android:textSize="24sp"
+                        tools:text="@string/common_download" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/common_unit"
+                        android:textColor="@color/textDark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_ping" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/common_ping"
+                        android:textColor="@color/colorRed" />
+
+                    <TextView
+                        android:id="@+id/tvResultPing"
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:textColor="@color/textDark"
+                        tools:text="50 ms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_jitter" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/common_jitter"
+                        android:textColor="@color/colorRed" />
+
+                    <TextView
+                        android:id="@+id/tvResultJitter"
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:textColor="@color/textDark"
+                        tools:text="50 ms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_packet_loss" />
+
+                    <TextView
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/common_packet_loss"
+                        android:textColor="@color/colorRed" />
+
+                    <TextView
+                        android:id="@+id/tvResultPacketLoss"
+                        style="@style/TextMessage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:textColor="@color/textDark"
+                        tools:text="50 ms" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="24dp"
+                android:text="@string/common_server"
+                android:textAllCaps="true"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/tvServer"
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textDark"
+                android:textSize="15sp"
+                tools:text="User server" />
+
+            <TextView
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="@string/common_location_type"
+                android:textAllCaps="true"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/tvLocationType"
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textDark"
+                android:textSize="15sp"
+                tools:text="indoor" />
+
+            <TextView
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="@string/common_connection_type"
+                android:textAllCaps="true"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/tvConnectionType"
+                style="@style/TextMessage"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textDark"
+                android:textSize="15sp"
+                tools:text="Wifi" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorStatusBar"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/textDark"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/btnStart"
+        style="@style/MainButton"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/common_start_test" />
+
+</LinearLayout>
