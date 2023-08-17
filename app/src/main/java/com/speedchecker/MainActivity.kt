@@ -72,13 +72,9 @@ class MainActivity : AppCompatActivity(), SpeedTestListener {
         val jitterSpan = SpannableStringBuilder()
         jitterSpan.bold { append(speedTestResult.jitter.toString()) }.append(" ms")
         binding.tvResultJitter.text = jitterSpan
-        val indoorStatus =
-            if (speedTestResult.indoorOutdoorStatus == 0) getString(R.string.status_outdoor) else getString(
-                R.string.status_indoor
-            )
-        binding.tvLocationType.text = indoorStatus
         speedTestResult.packetLoss?.let {
-            binding.tvResultPacketLoss.text = speedTestResult.packetLoss.toString() + "%"
+            binding.tvResultPacketLoss.text =
+                String.format("%.2f", speedTestResult.packetLoss) + "%"
         } ?: run {
             binding.tvResultPacketLoss.text = "-"
         }
