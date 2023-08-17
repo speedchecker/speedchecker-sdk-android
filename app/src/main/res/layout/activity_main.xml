@@ -289,23 +289,6 @@
                 style="@style/TextMessage"
                 android:layout_gravity="start"
                 android:layout_marginTop="16dp"
-                android:text="@string/common_location_type"
-                android:textAllCaps="true"
-                android:textColor="@color/colorRed" />
-
-            <TextView
-                android:id="@+id/tvLocationType"
-                style="@style/TextMessage"
-                android:layout_gravity="start"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/textDark"
-                android:textSize="15sp"
-                tools:text="indoor" />
-
-            <TextView
-                style="@style/TextMessage"
-                android:layout_gravity="start"
-                android:layout_marginTop="16dp"
                 android:text="@string/common_connection_type"
                 android:textAllCaps="true"
                 android:textColor="@color/colorRed" />
