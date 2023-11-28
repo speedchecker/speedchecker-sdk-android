@@ -13,6 +13,16 @@ dependencyResolutionManagement {
         jcenter()
         maven { url "https://jitpack.io" }
         //TODO: 1. Update the "project level" gradle file.
+        /*
+        maven {
+            url 'https://maven.speedcheckerapi.com/artifactory/libs-release'
+            credentials {
+                username = "speedchecker"
+                password = "AP3Zg8iFoiatscExgkeMHP3ur9EcsNkbxC8e6gXr8QV9PeWtiAVM3pETm8pF"
+            }
+        }
+         */
+        
         maven {
             url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
             credentials {

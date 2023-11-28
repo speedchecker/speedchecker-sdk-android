@@ -5,6 +5,7 @@ import android.text.SpannableStringBuilder
 import android.text.method.ScrollingMovementMethod
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.text.bold
 import com.speedchecker.android.sdk.Public.SpeedTestListener
 import com.speedchecker.android.sdk.Public.SpeedTestResult
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity(), SpeedTestListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

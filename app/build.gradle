@@ -43,7 +43,7 @@ android {
 dependencies {
 
     //TODO: 2. Update the "app level" gradle file.
-    implementation 'com.speedchecker:android-sdk:4.2.218-1-demo'
+    implementation 'com.speedchecker:android-sdk:4.2.220-demo'
     implementation 'com.xeoh.android:text-highlighter:1.0.3'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
