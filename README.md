@@ -7,7 +7,7 @@
 allprojects {
    repositories {
        maven {
-            url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
+            url 'https://maven.speedcheckerapi.com/artifactory/libs-release'
             credentials {
                 username = "demo"
                 password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
@@ -18,7 +18,7 @@ allprojects {
 </pre>
 **2. Update the "app level" gradle file.**
 <pre>
-implementation 'com.speedchecker:android-sdk:4.2.216-demo'
+implementation 'com.speedchecker:android-sdk:4.2.224'
 </pre>
 **3. Initialize SpeedcheckerSDK inside a main activity.**
 <pre>
