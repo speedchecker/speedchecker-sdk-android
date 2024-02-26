@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
         //TODO: 1. Update the "project level" gradle file.
         maven {
-            url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
+            url 'https://maven.speedcheckerapi.com/artifactory/libs-release'
             credentials {
                 username = "demo"
                 password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
