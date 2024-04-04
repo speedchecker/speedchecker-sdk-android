@@ -13,7 +13,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "citymesh.networktester.testnmeasurementpoc"
+        applicationId "com.speedchecker.android.sdk.demo"
         minSdk 21
         targetSdk 33
         versionCode 1
