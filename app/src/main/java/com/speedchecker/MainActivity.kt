@@ -7,6 +7,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.bold
 import com.speedchecker.android.sdk.Public.SpeedTestListener
+import com.speedchecker.android.sdk.Public.SpeedTestOptions
 import com.speedchecker.android.sdk.Public.SpeedTestResult
 import com.speedchecker.android.sdk.SpeedcheckerSDK
 import com.speedchecker.databinding.ActivityMainBinding
