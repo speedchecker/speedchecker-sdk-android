@@ -31,7 +31,7 @@ SpeedChecker SDK for Android allows developers to integrate speed test features 
 allprojects {
    repositories {
        maven {
-            url 'https://maven.speedcheckerapi.com/artifactory/libs-demo'
+            url 'https://maven.speedcheckerapi.com/artifactory/libs-release'
             credentials {
                 username = "demo"
                 password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
@@ -44,7 +44,7 @@ allprojects {
 ### **2. Update the "app level" gradle file.**
 
 ```java
-implementation 'com.speedchecker:android-sdk:4.2.229'
+implementation 'com.speedchecker:android-sdk:4.2.242'
 ```
 
 ### **3.** Initialize SpeedcheckerSDK inside the main activity.
