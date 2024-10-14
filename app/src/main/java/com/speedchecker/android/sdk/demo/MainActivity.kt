@@ -1,4 +1,4 @@
-package com.speedchecker
+package com.speedchecker.android.sdk.demo
 
 import android.os.Bundle
 import android.text.SpannableStringBuilder
@@ -7,10 +7,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.bold
 import com.speedchecker.android.sdk.Public.SpeedTestListener
-import com.speedchecker.android.sdk.Public.SpeedTestOptions
 import com.speedchecker.android.sdk.Public.SpeedTestResult
 import com.speedchecker.android.sdk.SpeedcheckerSDK
-import com.speedchecker.databinding.ActivityMainBinding
+import com.speedchecker.android.sdk.demo.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity(), SpeedTestListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

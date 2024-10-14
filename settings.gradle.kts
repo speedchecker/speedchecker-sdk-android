@@ -1,6 +1,14 @@
+import java.net.URI
+
 pluginManagement {
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -11,10 +19,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
-        maven { url "https://jitpack.io" }
-        //TODO: 1. Update the "project level" gradle file.
+        maven { url = URI("https://jitpack.io") }
         maven {
-            url 'https://maven.speedcheckerapi.com/artifactory/libs-release'
+            url = URI("https://maven.speedcheckerapi.com/artifactory/libs-release")
             credentials {
                 username = "demo"
                 password = "AP85qiz6wYEsCttWU2ZckEWSwJKuA6mSYcizEY"
@@ -22,5 +29,7 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "Speedchecker Demo"
-include ':app'
+
+rootProject.name = "SpeedCheckerDemo"
+include(":app")
+ 

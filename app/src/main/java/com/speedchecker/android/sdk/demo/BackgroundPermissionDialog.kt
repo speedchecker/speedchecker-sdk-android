@@ -1,4 +1,4 @@
-package com.speedchecker
+package com.speedchecker.android.sdk.demo
 
 import android.os.Bundle
 import android.view.LayoutInflater

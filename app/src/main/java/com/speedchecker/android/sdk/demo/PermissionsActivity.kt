@@ -1,4 +1,4 @@
-package com.speedchecker
+package com.speedchecker.android.sdk.demo
 
 import android.Manifest
 import android.content.Context
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
-import com.speedchecker.databinding.ActivityPermissionsBinding
+import com.speedchecker.android.sdk.demo.databinding.ActivityPermissionsBinding
 import com.xeoh.android.texthighlighter.TextHighlighter
 
 class PermissionsActivity : AppCompatActivity() {
