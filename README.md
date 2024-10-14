@@ -18,7 +18,7 @@ allprojects {
 </pre>
 **2. Update the "app level" gradle file.**
 <pre>
-implementation 'com.speedchecker:android-sdk:4.2.242'
+implementation 'com.speedchecker:android-sdk:4.2.256'
 </pre>
 **3. Initialize SpeedcheckerSDK inside a main activity.**
 <pre>
@@ -57,4 +57,13 @@ SpeedcheckerSDK.SpeedTest.setOnSpeedTestListener(this);
 <pre>
 SpeedcheckerSDK.SpeedTest.startTest(this);
 </pre>
-**8. That's it. Enjoy!**
+**8. License Key setup in main application class(optional)**
+<pre>
+class MainApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        SpeedcheckerSDK.setLicenseKey(this, "Insert your key here")
+    }
+}
+</pre>
+**9. That's it. Enjoy!**
