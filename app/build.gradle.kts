@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.speedchecker.android.sdk.demo"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.speedchecker.android.sdk.demo"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -41,7 +41,6 @@ android {
 dependencies {
     implementation(libs.speedchecker.sdk)
 
-    implementation(libs.text.highlighter)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
