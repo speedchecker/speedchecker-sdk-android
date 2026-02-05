@@ -44,7 +44,7 @@ allprojects {
 ### **2. Update the "app level" gradle file.**
 
 ```java
-implementation 'com.speedchecker:android-sdk:4.2.242'
+implementation 'com.speedchecker:android-sdk:4.2.299'
 ```
 
 ### **3.** Initialize SpeedcheckerSDK inside the main activity.
